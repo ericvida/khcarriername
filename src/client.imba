@@ -72,7 +72,7 @@ tag App
 		"90": "metfone"
 		"97": "metfone"
 	}
-	prop cellnum = "066627772"
+	prop cellnum = ""
 	prop stripped
 	prop three
 	prop two
@@ -85,7 +85,7 @@ tag App
 	def render
 		<self[d:vflex jc:center ai:stretch]>
 			<body>
-				<div[ta:center h:300px d:flex fld:column jc:center ai:center]>
+				<div[ta:center h:100px d:flex fld:column jc:center ai:center]>
 					stripped = cellnum.replace(/\D/g, "")
 					three = stripped.substring(0,3)
 					two = stripped.substring(0,2)
@@ -96,7 +96,7 @@ tag App
 						<h2.{carriers["{three}"]}> carriers["{two}"]
 					else
 						<h2[c:red5]> "no match"
-				<div[ta:center w:100% py:4 c:gray4]> "Cellcard / Metfone / Smart identifier"
+				<div[ta:center w:100% py:4 c:gray4]> "Cambodia Carrier Identifier"
 				<div [
 					w:200px
 					bg:gray3
@@ -106,7 +106,7 @@ tag App
 					jc:center
 					mx:auto
 				]>
-					<input[ta:center] bind=cellnum placeholder="Type Number, find Carrier 🇰🇭">
+					<input[ta:center] bind=cellnum placeholder="type number here 🇰🇭">
 
 				
 
